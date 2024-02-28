@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  background-color: black;
+
   justify-content: space-between;
   align-items: center;
   border-radius: 50px;
@@ -10,11 +10,9 @@
 }
 
 .ball {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
-  background-color: white;
-  position: absolute;
 
-  left: 1px;
+  position: absolute;
 }
