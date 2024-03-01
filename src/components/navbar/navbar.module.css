@@ -54,7 +54,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 430px) {
   .links {
     justify-content: flex-end;
   }
