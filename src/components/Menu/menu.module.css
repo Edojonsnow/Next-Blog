@@ -22,3 +22,12 @@
   width: 100px;
   text-align: center;
 }
+.editorSubtitle {
+  margin-top: 25px;
+}
+.fadedTitle {
+  color: var(--softTextColor);
+  font-size: 13px;
+  opacity: 0.7;
+  font-style: italic;
+}

@@ -6,11 +6,11 @@ import MenuPosts from "../menuPosts/MenuPosts";
 const Menu = () => {
   return (
     <div className={styles.container}>
-      <h3>What's Hot?</h3>
-      <h2>Most Popular</h2>
+      <h4 className={styles.fadedTitle}>What's Hot?</h4>
+      <h2 className={styles.subtitle}>Most Popular</h2>
       <MenuPosts withImage={false} />
       <div className={styles.bottomMenu}>
-        <h3>Discover by topic</h3>
+        <h4 className={styles.fadedTitle}>Discover by topic</h4>
         <h2>Categories</h2>
         <div className={styles.categories}>
           <Link
@@ -44,6 +44,11 @@ const Menu = () => {
           >
             Games
           </Link>
+        </div>
+        <div className={styles.editorSubtitle}>
+          {" "}
+          <h4 className={styles.fadedTitle}>Chosen by the editor</h4>
+          <h2 className={styles.subtitle}>Editor's Pick</h2>
         </div>
         <MenuPosts withImage={true} />
       </div>

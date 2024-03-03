@@ -4,6 +4,7 @@ import Featured from "@/components/featured/Featured";
 import Menu from "@/components/Menu/Menu";
 import CategoryList from "@/components/categoryList/CategoryList";
 import Cardlist from "@/components/cardList/CardList";
+import Pagination from "@/components/pagination/Pagination";
 
 export default function Home() {
   return (

@@ -3,6 +3,7 @@ import styles from "./cardList.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import Card from "../card/Card";
+import Pagination from "../pagination/Pagination";
 
 const CardList = () => {
   return (
@@ -11,6 +12,7 @@ const CardList = () => {
       <Card />
       <Card />
       <Card />
+      <Pagination />
     </div>
   );
 };
