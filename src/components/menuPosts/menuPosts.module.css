@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.imageContainer {
+  aspect-ratio: 1/1;
+  position: relative;
+  flex: 1;
+}
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 3;
+}
+.image {
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.category {
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 5px;
+  width: max-content;
+  color: var(--textColor);
+}
+
+.details {
+  display: flex;
+
+  gap: 10px;
+}
+.username,
+.date {
+  font-size: 13px;
+  color: var(--softTextColor);
+}
+
+.personal {
+  background-color: silver;
+}
+.tech {
+  background-color: cornflowerblue;
+}
+
+.social {
+  background-color: darkgoldenrod;
+}
+
+.books {
+  background-color: blanchedalmond;
+}
