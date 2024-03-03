@@ -1,3 +1,24 @@
 .container {
   flex: 2;
+  margin-top: 100px;
+}
+.bottomMenu {
+  margin-top: 50px;
+}
+.categories {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 30px 30px 30px;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: bisque;
+  color: var(--textColor);
+  width: 100px;
+  text-align: center;
 }
