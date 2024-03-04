@@ -1,0 +1,11 @@
+.content {
+  display: flex;
+  gap: 50px;
+}
+.category {
+  color: white;
+  background-color: coral;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+}
