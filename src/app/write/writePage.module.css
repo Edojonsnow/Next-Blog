@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.title {
+  height: 80px;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  font-size: 28px;
+  border-radius: 5px;
+}
+
+.editor {
+  display: flex;
+  height: 700px;
+  gap: 20px;
+}
+.textBox {
+  width: 100%;
+}
+.button,
+.addButton {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  border-radius: 50%;
+  border: 1px solid green;
+  background-color: transparent;
+}
+
+.add {
+  display: flex;
+  gap: 10px;
+}

@@ -71,3 +71,7 @@ a {
     max-width: 470px;
   }
 }
+
+.ql-container {
+  font-size: 28px !important;
+}
