@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 150px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid var(--softTextColor);
+  gap: 50px;
+}
+
+.button {
+  padding: 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+
+.button:first-child {
+  background-color: coral;
+}
+
+.button:nth-child(2) {
+  background-color: green;
+}
+
+.button:nth-child(3) {
+  background-color: black;
+}
+
+@media screen and (max-width: 640px) {
+  .wrap {
+    padding: 50px 100px;
+  }
+}
+@media screen and (max-width: 448px) {
+  .wrap {
+    padding: 30px 75px;
+    gap: 25px;
+  }
+  .button {
+    font-size: 10px;
+  }
+}
