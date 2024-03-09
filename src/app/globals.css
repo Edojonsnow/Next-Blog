@@ -25,6 +25,7 @@ a {
   --textColor: white;
   --softBg: #1f273a;
   --softTextColor: #a6a6a6;
+  --contrast: white;
 }
 
 .container {

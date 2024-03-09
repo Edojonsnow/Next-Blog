@@ -15,18 +15,18 @@ const WritePage = () => {
       <input type="text" placeholder="Title" className={styles.title} />
       <div className={styles.editor}>
         <button className={styles.button} onClick={() => setIsOpen(!open)}>
-          <Image src="/plus.png" width={16} height={16} />
+          <Image src="/plus.png" width={30} height={30} />
         </button>
         {open && (
           <div className={styles.add}>
             <button className={styles.addButton}>
-              <Image src="/image.png" width={16} height={16} />
+              <Image src="/image.png" width={30} height={30} />
             </button>
             <button className={styles.addButton}>
-              <Image src="/video.png" width={16} height={16} />
+              <Image src="/video.png" width={30} height={30} />
             </button>
             <button className={styles.addButton}>
-              <Image src="/external.png" width={16} height={16} />
+              <Image src="/export.png" width={30} height={30} />
             </button>
           </div>
         )}
@@ -38,6 +38,7 @@ const WritePage = () => {
           placeholder="Tell us something interesting..."
         />
       </div>
+      <div className={styles.publish}>Publish</div>
     </div>
   );
 };
