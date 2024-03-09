@@ -9,7 +9,7 @@ const Auth = () => {
   const [open, setIsOpen] = useState(false);
   return (
     <>
-      {status === "authenticated" ? (
+      {status === "notauthenticated" ? (
         <Link href="/login" className={styles.link}>
           Login
         </Link>
