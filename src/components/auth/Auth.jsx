@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import styles from "./auth.module.css";
+import { signOut } from "next-auth/react";
 
 const Auth = () => {
   const status = "authenticated";
@@ -19,7 +20,7 @@ const Auth = () => {
             {" "}
             Write
           </Link>
-          <span>Logout</span>
+          <span onClick={signOut}>Logout</span>
         </>
       )}
       <div className={styles.burger} onClick={() => setIsOpen(!open)}>
