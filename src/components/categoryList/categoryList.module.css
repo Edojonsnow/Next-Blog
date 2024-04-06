@@ -33,8 +33,11 @@
 .category.tech {
   background-color: cornflowerblue;
 }
-.category.society {
+.category.social {
   background-color: green;
+}
+.category.world {
+  background-color: purple;
 }
 .image {
   border-radius: 50%;

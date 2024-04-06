@@ -3,23 +3,19 @@ import styles from "./card.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-function Card() {
+function Card({ key, item }) {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} key={key}>
       <div className={styles.imageContainer}>
         <Image className={styles.image} src="/p1.jpeg" alt="personal" fill />
       </div>
       <div className={styles.textContainer}>
         <div className={styles.details}>
-          <span className={styles.date}> 11.03.2024 - </span>
+          <span className={styles.date}> 11.03.2024 </span>
           <span className={styles.postCategory}>Personal</span>
         </div>
         <Link href="/">
-          {" "}
-          <h2 className={styles.postTitle}>
-            {" "}
-            Lorem ipsum dolor sit amet, consectetur adipiscing
-          </h2>
+          <h2 className={styles.postTitle}>{item.title} </h2>
         </Link>
         <p className={styles.postText}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -31,7 +27,6 @@ function Card() {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <Link href="/" className={styles.readMore}>
-          {" "}
           Read More
         </Link>
       </div>

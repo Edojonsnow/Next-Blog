@@ -3,14 +3,14 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import styles from "./auth.module.css";
-import { signOut } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 
 const Auth = () => {
-  const status = "authenticated";
+  const { status } = useSession();
   const [open, setIsOpen] = useState(false);
   return (
     <>
-      {status === "notauthenticated" ? (
+      {status === "unauthenticated" ? (
         <Link href="/login" className={styles.link}>
           Login
         </Link>
@@ -33,12 +33,12 @@ const Auth = () => {
           <Link href="/"> Homepage</Link>
           <Link href="/"> Contact</Link>
           <Link href="/"> About</Link>
-          {status === "notauthenticated" ? (
+          {status === "unauthenticated" ? (
             <Link href="/login">Login</Link>
           ) : (
             <>
               <Link href="/write"> Write</Link>
-              <span>Logout</span>
+              <span onClick={signOut}>Logout</span>
             </>
           )}
         </div>

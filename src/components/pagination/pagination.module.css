@@ -10,4 +10,11 @@
   color: white;
   border-radius: 2px;
   font-size: 13px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.button:disabled {
+  background-color: rgba(220, 20, 60, 0.5);
+  cursor: not-allowed;
 }
