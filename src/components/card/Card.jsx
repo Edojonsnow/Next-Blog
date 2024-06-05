@@ -17,7 +17,7 @@ function Card({ key, item }) {
         <Link href={`/posts/${item.slug}`}>
           <h2 className={styles.postTitle}>{item.title} </h2>
         </Link>
-        <div className={styles.postText}>{item.desc.slice(3)}</div>
+        <div className={styles.postText}>{item.desc.substring(0, 50)}</div>
         <Link href={`/posts/${item.slug}`} className={styles.readMore}>
           Read More
         </Link>
